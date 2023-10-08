@@ -38,7 +38,7 @@ $(document).ready(function() {
   .prev-button:hover,
   .next-button:hover {
     background-color: rgba(255, 255, 255, 0.8);
-	color: #333;
+color: #333;
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
