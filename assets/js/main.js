@@ -3,58 +3,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-$(document).ready(function() {
-    $('.image-carousel').slick({
-      dots: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      centerMode: true,
-      variableWidth: true,
-      autoplay: true,
-      autoplaySpeed: 3000
-    });
-  });
-
-.image-carousel {
-    position: relative;
-  }
-  .prev-button,
-  .next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #333;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .prev-button:hover,
-  .next-button:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-color: #333;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .prev-button:hover,
-  .next-button:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  .prev-button {
-    left: 10px;
-  }
-  .next-button {
-    right: 10px;
-  }
-
 
 (function($) {
 
