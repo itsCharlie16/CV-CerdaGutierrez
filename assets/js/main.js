@@ -4,41 +4,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-document.addEventListener('DOMContentLoaded', function () {
-    const carouselWrapper = document.getElementById('carouselWrapper');
-    const items = document.querySelectorAll('.carousel-item');
-
-    let currentIndex = 0;
-
-    function showCurrentIndex() {
-        carouselWrapper.style.transform = `translateX(${-currentIndex * 100}%)`;
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % items.length;
-        showCurrentIndex();
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        showCurrentIndex();
-    }
-
-    setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos
-
-    // Agrega botones de navegación si es necesario
-    const nextButton = document.createElement('button');
-    nextButton.innerText = 'Next';
-    nextButton.addEventListener('click', nextSlide);
-
-    const prevButton = document.createElement('button');
-    prevButton.innerText = 'Previous';
-    prevButton.addEventListener('click', prevSlide);
-
-    document.body.appendChild(prevButton);
-    document.body.appendChild(nextButton);
-});
-
 (function($) {
 
 	var	$window = $(window),
